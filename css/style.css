@@ -120,7 +120,7 @@ img {
   width: 16px;
   height: 12px;
   margin-right: 10px;
-  background-image: url(../images/envelope.svg);
+  background-image: url(../images/icons/envelope.svg);
   background-size: contain;
   background-position: center;
 }
@@ -130,8 +130,9 @@ img {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  background-image: url(../images/smartphone.svg);
+  background-image: url(../images/icons/smartphone.svg);
   background-size: contain;
+  background-position: center;
 }
 /* Hero*/
 .section-hero {
@@ -146,11 +147,14 @@ img {
   margin-left: auto;
   margin-right: auto;
   background: var(--black-bgc);
-  background-image: radial-gradient(rgba(47, 48, 58, 0.4), transparent),
-    url(../images/Hero.jpg);
+  background-image: url(../images/Hero.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+.overlay:hover {
+  background-image: linear-gradient (rgba(47, 48, 58, 0.4));
+}
+
 .hero-title {
   color: var(--white-button-color);
   font-weight: 900;
@@ -202,16 +206,16 @@ img {
   margin-bottom: 30px;
 }
 .feature-list .icon-delivery::before {
-  background-image: url(../images/antenna.svg);
+  background-image: url(../images/icons/antenna.svg);
 }
 .feature-list .icon-clock::before {
-  background-image: url(../images/clock.svg);
+  background-image: url(../images/icons/clock.svg);
 }
 .feature-list .icon-diagram::before {
-  background-image: url(../images/diagram.svg);
+  background-image: url(../images/icons/diagram.svg);
 }
 .feature-list .icon-astronaut::before {
-  background-image: url(../images/astronaut.svg);
+  background-image: url(../images/icons/astronaut.svg);
 }
 .feature-title {
   color: var(--primary-text-color);
@@ -439,7 +443,7 @@ img {
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
-.icon-list .item {
+.sign-list .item {
   display: inline-block;
   width: 44px;
   height: 44px;
@@ -449,18 +453,35 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
-.icon-list .instagram {
-  background-image: url(../images/instagram-footer.svg);
+.sign-list .instagram {
+  background-image: url(../images/icons/instagram-footer.svg);
 }
-.icon-list .twitter {
-  background-image: url(../images/twitter-footer.svg);
+.sign-list .twitter {
+  background-image: url(../images/icons/twitter-footer.svg);
 }
-.icon-list .facebook {
-  background-image: url(../images/facebook-footer.svg);
+.sign-list .facebook {
+  background-image: url(../images/icons/facebook-footer.svg);
 }
-.icon-list .linkedin {
-  background-image: url(../images/linkedin-footer.svg);
+.sign-list .linkedin {
+  background-image: url(../images/icons/linkedin-footer.svg);
 }
-.icon-list .item:hover {
+.sign-list .item:hover {
+  background-color: var(--accent-button-color);
+}
+.social-list .item {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 16px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  /* content: ""; */
+  background-size: 20px;
+}
+.social-list .item:not(:last-child) {
+  margin-right: 10px;
+}
+.social-list .item:hover {
   background-color: var(--accent-button-color);
 }
