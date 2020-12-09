@@ -301,11 +301,11 @@ img {
   width: 20px;
   height: 20px;
   fill: currentColor;
-  color: var(--icon-color);
+  /* color: var(--icon-color); */
 }
 .soc-icon:hover,
 .soc-icon:focus {
-  --color5: var(--white-button-color);
+  color: var(--white-button-color);
   background-color: var(--accent-button-color);
 }
 /* Клиенты */
@@ -349,7 +349,7 @@ img {
 .clients-icon:focus,
 .clients-link:hover,
 .clients-link:focus {
-  --color4: var(--accent-button-color);
+  color: var(--accent-button-color);
   border-color: var(--accent-button-color);
 }
 /* Футер */
@@ -422,9 +422,10 @@ img {
   border-radius: 50%;
   cursor: pointer;
   text-decoration: none;
+  color: var(--icon-color);
 }
 .sign .icon {
-  color: var(--primary-white-color);
+  fill: var(--primary-white-color);
 }
 .soc-list li:not(:last-child) {
   margin-right: 10px;
@@ -472,6 +473,7 @@ img {
 .project-list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .project-list .item {
   /* width: calc((100% - 60px) / 3); */
@@ -495,12 +497,14 @@ img {
   border-right: 1px solid var(--solid-border-color);
   border-bottom: 1px solid var(--solid-border-color);
 }
-.project-title:hover,
-.project-title:focus {
+.project-link {
+  display: block;
+}
+.project-link:hover,
+.project-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-
 .project-name {
   color: var(--primary-text-color);
   font-size: 18px;
